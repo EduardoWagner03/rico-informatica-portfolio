@@ -1,0 +1,86 @@
+.why-choose-section {
+    padding: 6rem 0;
+    background-color: #000000;
+    position: relative;
+}
+
+.reason-card {
+    padding: 2rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+    transform: translateY(-10px);
+}
+
+.reason-icon-wrapper {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, rgba(198, 171, 82, 0.2), rgba(198, 171, 82, 0.1));
+    border: 3px solid #C6AB52;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.reason-card:hover .reason-icon-wrapper {
+    background: linear-gradient(135deg, #C6AB52, #d4bc6a);
+    transform: scale(1.1);
+}
+
+.reason-icon {
+    font-size: 2.5rem;
+    color: #C6AB52;
+    transition: color 0.3s ease;
+}
+
+.reason-card:hover .reason-icon {
+    color: #000000;
+}
+
+.reason-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #E0E0E0;
+    margin-bottom: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.reason-description {
+    font-size: 1rem;
+    color: #B0B0B0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 991px) {
+    .why-choose-section {
+        padding: 4rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .reason-card {
+        padding: 1.5rem 0.5rem;
+    }
+
+    .reason-icon-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+
+    .reason-icon {
+        font-size: 2rem;
+    }
+
+    .reason-title {
+        font-size: 1.1rem;
+    }
+
+    .reason-description {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,419 @@
+.about-section {
+    padding: 6rem 0;
+    background-color: #000000;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #E0E0E0;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: #B0B0B0;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+.title-underline {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #C6AB52, transparent);
+    margin-bottom: 2rem;
+}
+
+.title-underline.small {
+    width: 50px;
+    height: 3px;
+}
+
+/* Intro Card */
+.about-intro-card {
+    background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+    border: 2px solid #C6AB52;
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(198, 171, 82, 0.2);
+}
+
+.intro-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #C6AB52, #d4bc6a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2.5rem;
+    color: #000000;
+    box-shadow: 0 5px 20px rgba(198, 171, 82, 0.4);
+}
+
+.intro-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #C6AB52;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-intro {
+    font-size: 1.1rem;
+    color: #E0E0E0;
+    line-height: 1.9;
+    margin: 0;
+}
+
+/* Mission & Vision Cards */
+.mission-vision-card {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    border: 2px solid rgba(198, 171, 82, 0.4);
+    border-radius: 15px;
+    padding: 2.5rem;
+    height: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.mission-vision-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(198, 171, 82, 0.1), transparent);
+    transition: left 0.6s ease;
+}
+
+.mission-vision-card:hover::before {
+    left: 100%;
+}
+
+.mission-vision-card:hover {
+    border-color: #C6AB52;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(198, 171, 82, 0.3);
+}
+
+.card-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(198, 171, 82, 0.15);
+    border: 2px solid #C6AB52;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #C6AB52;
+    transition: all 0.3s ease;
+}
+
+.mission-vision-card:hover .card-icon {
+    transform: rotate(360deg) scale(1.1);
+    background: #C6AB52;
+    color: #000000;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #C6AB52;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #B0B0B0;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Values Title */
+.values-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #E0E0E0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* CTA Card */
+.about-cta-card {
+    background: linear-gradient(135deg, #C6AB52, #d4bc6a);
+    border-radius: 20px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 15px 50px rgba(198, 171, 82, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.about-cta-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cta-icon {
+    width: 70px;
+    height: 70px;
+    background: #000000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: #C6AB52;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-text {
+    font-size: 1.1rem;
+    color: #1a1a1a;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #000000;
+    color: #C6AB52;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #000000;
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: #000000;
+    border-color: #000000;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-highlight {
+    background: linear-gradient(135deg, rgba(198, 171, 82, 0.15), rgba(198, 171, 82, 0.05));
+    border-left: 4px solid #C6AB52;
+    padding: 1.5rem;
+    border-radius: 10px;
+    height: 100%;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(198, 171, 82, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.about-highlight:hover::before {
+    left: 100%;
+}
+
+.about-highlight:hover {
+    transform: translateX(5px);
+    box-shadow: -4px 0 15px rgba(198, 171, 82, 0.3);
+}
+
+.highlight-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #C6AB52;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.highlight-text {
+    font-size: 1rem;
+    color: #B0B0B0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.features-row {
+    margin-top: 3rem;
+}
+
+.feature-col {
+    margin-bottom: 2rem;
+}
+
+.feature-card-new {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    border: 2px solid rgba(198, 171, 82, 0.3);
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card-new::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #C6AB52, #d4bc6a);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.feature-card-new:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-card-new:hover {
+    border-color: #C6AB52;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(198, 171, 82, 0.5);
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+}
+
+.feature-icon-wrapper-new {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #C6AB52, #d4bc6a);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card-new:hover .feature-icon-wrapper-new {
+    transform: rotate(360deg) scale(1.1);
+}
+
+.feature-icon-new {
+    font-size: 2rem;
+    color: #000000;
+}
+
+.feature-title-new {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #C6AB52;
+    margin-bottom: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feature-description-new {
+    font-size: 1rem;
+    color: #B0B0B0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 991px) {
+    .about-section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-content-box {
+        padding: 2rem;
+    }
+
+    .about-intro {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .about-content-box {
+        padding: 1.5rem;
+    }
+
+    .about-intro {
+        font-size: 1rem;
+    }
+
+    .highlight-title {
+        font-size: 1.1rem;
+    }
+
+    .highlight-text {
+        font-size: 0.9rem;
+    }
+
+    .feature-card-new {
+        padding: 1.5rem 1rem;
+    }
+
+    .feature-icon-wrapper-new {
+        width: 70px;
+        height: 70px;
+    }
+
+    .feature-icon-new {
+        font-size: 1.8rem;
+    }
+}

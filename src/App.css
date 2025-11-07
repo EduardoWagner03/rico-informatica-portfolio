@@ -1,38 +1,25 @@
 .App {
-  text-align: center;
+  background-color: #000000;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-gold {
+  color: #C6AB52;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-title {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Utilidades globais */
+.bg-black {
+  background-color: #000000;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-gray {
+  background-color: #111111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-rico {
+  color: #E0E0E0;
 }
