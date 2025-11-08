@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
+import TypewriterEffect from "./TypewriterEffect";
 import "./Hero.css";
 
 const Hero = () => {
@@ -27,7 +28,14 @@ const Hero = () => {
 
             <h2 className="hero-tagline">
               Transformando <span className="text-gold">Tecnologia</span> em{" "}
-              <span className="text-gold">Soluções</span>
+              <span className="text-gold">
+                <TypewriterEffect
+                  texts={["Soluções", "Resultados", "Inovação", "Qualidade"]}
+                  speed={120}
+                  deleteSpeed={80}
+                  pauseDuration={2500}
+                />
+              </span>
             </h2>
 
             <p className="hero-description">
