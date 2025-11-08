@@ -40,7 +40,7 @@ const Services = () => {
   return (
     <section id="servicos" className="services-section">
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 scroll-animate">
           <h2 className="section-title">
             <span className="text-gold">Nossos Serviços</span>
           </h2>
@@ -53,7 +53,11 @@ const Services = () => {
         <Row>
           {services.map((service, index) => (
             <Col lg={6} md={6} key={index} className="mb-4">
-              <Card className="service-card glow-gold">
+              <Card
+                className={`service-card glow-gold scroll-animate-scale delay-${
+                  (index + 2) * 100
+                }`}
+              >
                 <Card.Body>
                   <div className="service-icon-wrapper">
                     <FontAwesomeIcon

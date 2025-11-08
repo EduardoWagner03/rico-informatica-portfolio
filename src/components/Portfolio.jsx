@@ -82,7 +82,7 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="portfolio-section">
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 scroll-animate">
           <h2 className="section-title">
             Nosso Trabalho Fala <span className="text-gold">por Nós</span>
           </h2>
@@ -93,29 +93,33 @@ const Portfolio = () => {
         </div>
 
         <Row>
-          {portfolioItems.map((item, index) => (
-            <Col lg={4} md={6} key={index} className="mb-4">
-              <div
-                className="portfolio-item"
-                onClick={() => handleShowModal(item)}
-              >
-                <div className="portfolio-image-wrapper">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="portfolio-image"
-                  />
-                  <div className="portfolio-overlay">
-                    <div className="portfolio-info">
-                      <h4 className="portfolio-title">{item.title}</h4>
-                      <p className="portfolio-category">{item.category}</p>
-                      <span className="portfolio-btn">Ver Detalhes</span>
+          {portfolioItems.map((item, index) => {
+            // Cria delays escalonados: 200, 400, 600, 800, 1000, 1200
+            const delayClass = `delay-${(index + 1) * 200}`;
+            return (
+              <Col lg={4} md={6} key={index} className="mb-4">
+                <div
+                  className={`portfolio-item scroll-animate-scale ${delayClass}`}
+                  onClick={() => handleShowModal(item)}
+                >
+                  <div className="portfolio-image-wrapper">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="portfolio-image"
+                    />
+                    <div className="portfolio-overlay">
+                      <div className="portfolio-info">
+                        <h4 className="portfolio-title">{item.title}</h4>
+                        <p className="portfolio-category">{item.category}</p>
+                        <span className="portfolio-btn">Ver Detalhes</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </Col>
-          ))}
+              </Col>
+            );
+          })}
         </Row>
 
         <Modal

@@ -82,7 +82,7 @@ const Contact = () => {
   return (
     <section id="contato" className="contact-section">
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 scroll-animate">
           <h2 className="section-title">
             Fale <span className="text-gold">Conosco</span>
           </h2>
@@ -91,7 +91,7 @@ const Contact = () => {
 
         <Row className="justify-content-center">
           <Col lg={10}>
-            <div className="contact-info-wrapper">
+            <div className="contact-info-wrapper scroll-animate-scale delay-200">
               <h3 className="form-title">Informações de Contato</h3>
 
               <div className="contact-info-item">

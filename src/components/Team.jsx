@@ -32,7 +32,7 @@ const Team = () => {
   return (
     <section className="team-section">
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 scroll-animate">
           <h2 className="section-title">
             Nossa <span className="text-gold">Equipe</span>
           </h2>
@@ -43,31 +43,37 @@ const Team = () => {
         </div>
 
         <Row className="justify-content-center">
-          {team.map((member, index) => (
-            <Col lg={4} md={6} key={index} className="mb-4">
-              <Card className="team-card">
-                <div className="team-image-wrapper">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="team-image"
-                  />
-                  <div className="team-overlay">
-                    <div className="team-social">
-                      <a href="#team" className="social-link">
-                        <FontAwesomeIcon icon={faLinkedin} />
-                      </a>
+          {team.map((member, index) => {
+            // Delays bem maiores: 0, 600, 1200 (aparecem realmente um de cada vez)
+            const delayClass = index === 0 ? "" : `delay-${index * 600}`;
+            return (
+              <Col lg={4} md={6} key={index} className="mb-4">
+                <Card
+                  className={`team-card scroll-animate-scale ${delayClass}`}
+                >
+                  <div className="team-image-wrapper">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="team-image"
+                    />
+                    <div className="team-overlay">
+                      <div className="team-social">
+                        <a href="#team" className="social-link">
+                          <FontAwesomeIcon icon={faLinkedin} />
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <Card.Body className="team-info">
-                  <h4 className="team-name">{member.name}</h4>
-                  <p className="team-role">{member.role}</p>
-                  <p className="team-specialty">{member.specialty}</p>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
+                  <Card.Body className="team-info">
+                    <h4 className="team-name">{member.name}</h4>
+                    <p className="team-role">{member.role}</p>
+                    <p className="team-specialty">{member.specialty}</p>
+                  </Card.Body>
+                </Card>
+              </Col>
+            );
+          })}
         </Row>
       </Container>
     </section>

@@ -1,21 +1,7 @@
 .contact-section {
     padding: 6rem 0;
-    background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
-    border-top: 2px solid #C6AB52;
+    background: transparent;
     position: relative;
-}
-
-.contact-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 1px;
-    background: linear-gradient(90deg,
-            transparent 0%,
-            #C6AB52 50%,
-            transparent 100%);
 }
 
 .section-subtitle {

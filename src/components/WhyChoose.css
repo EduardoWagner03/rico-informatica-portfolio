@@ -1,12 +1,14 @@
 .why-choose-section {
     padding: 6rem 0;
-    background-color: #000000;
+    background: transparent;
     position: relative;
 }
 
 .reason-card {
     padding: 2rem 1rem;
     transition: all 0.3s ease;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, rgba(198, 171, 82, 0.2), rgba(198, 171, 82, 0.1));
 }
 
 .reason-card:hover {
@@ -14,8 +16,8 @@
 }
 
 .reason-icon-wrapper {
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(135deg, rgba(198, 171, 82, 0.2), rgba(198, 171, 82, 0.1));
     border: 3px solid #C6AB52;
     border-radius: 50%;
@@ -32,7 +34,7 @@
 }
 
 .reason-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #C6AB52;
     transition: color 0.3s ease;
 }
@@ -42,7 +44,7 @@
 }
 
 .reason-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #E0E0E0;
     margin-bottom: 0.8rem;

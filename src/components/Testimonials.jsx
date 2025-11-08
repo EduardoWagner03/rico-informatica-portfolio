@@ -47,7 +47,7 @@ const Testimonials = () => {
   return (
     <section id="depoimentos" className="testimonials-section">
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 scroll-animate">
           <h2 className="section-title">
             O Que Nossos <span className="text-gold">Clientes Dizem</span>
           </h2>
@@ -58,7 +58,7 @@ const Testimonials = () => {
           indicators={true}
           controls={true}
           interval={5000}
-          className="testimonials-carousel"
+          className="testimonials-carousel scroll-animate-scale delay-200"
         >
           {testimonials.map((testimonial, index) => (
             <Carousel.Item key={index}>

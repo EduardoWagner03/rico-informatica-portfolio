@@ -40,7 +40,7 @@ const About = () => {
   return (
     <section id="sobre" className="about-section">
       <Container>
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 scroll-animate">
           <h2 className="section-title">
             Conheça a <span className="text-gold">Rico Informática</span>
           </h2>
@@ -52,7 +52,7 @@ const About = () => {
 
         <Row className="justify-content-center mb-5">
           <Col lg={10}>
-            <div className="about-intro-card">
+            <div className="about-intro-card scroll-animate-scale delay-200">
               <div className="intro-icon">
                 <FontAwesomeIcon icon={faStar} />
               </div>
@@ -74,7 +74,7 @@ const About = () => {
 
         <Row className="mb-5">
           <Col md={6} className="mb-4">
-            <div className="mission-vision-card">
+            <div className="mission-vision-card scroll-animate-left delay-300">
               <div className="card-icon">
                 <FontAwesomeIcon icon={faBullseye} />
               </div>
@@ -88,7 +88,7 @@ const About = () => {
             </div>
           </Col>
           <Col md={6} className="mb-4">
-            <div className="mission-vision-card">
+            <div className="mission-vision-card scroll-animate-right delay-300">
               <div className="card-icon">
                 <FontAwesomeIcon icon={faEye} />
               </div>
@@ -103,7 +103,7 @@ const About = () => {
           </Col>
         </Row>
 
-        <div className="text-center mb-4">
+        <div className="text-center mb-4 scroll-animate delay-400">
           <h3 className="values-title">
             Nossos <span className="text-gold">Valores</span>
           </h3>
@@ -113,7 +113,11 @@ const About = () => {
         <Row className="features-row">
           {features.map((feature, index) => (
             <Col lg={3} md={6} key={index} className="feature-col mb-4">
-              <div className="feature-card-new">
+              <div
+                className={`feature-card-new scroll-animate delay-${
+                  (index + 5) * 100
+                }`}
+              >
                 <div className="feature-icon-wrapper-new">
                   <FontAwesomeIcon
                     icon={feature.icon}
@@ -129,7 +133,7 @@ const About = () => {
 
         <Row className="justify-content-center mt-5">
           <Col lg={10}>
-            <div className="about-cta-card">
+            <div className="about-cta-card scroll-animate-scale delay-600">
               <div className="cta-icon">
                 <FontAwesomeIcon icon={faUsers} />
               </div>
