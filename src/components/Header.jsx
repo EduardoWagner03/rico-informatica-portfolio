@@ -22,17 +22,15 @@ const Header = () => {
       <Container>
         <Navbar.Brand href="#inicio" className="brand-logo">
           <img
-            src="/logo-rico.png"
+            src="/LogoRicoInformática.jpg"
             alt="Rico Informática"
             className="logo-img"
             onError={(e) => {
               e.target.style.display = "none";
-              e.target.nextSibling.style.display = "block";
+              e.target.nextElementSibling.style.display = "inline-block";
             }}
           />
-          <span className="logo-text" style={{ display: "none" }}>
-            Rico Informática
-          </span>
+          <span className="logo-text">Rico Informática</span>
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="navbar-nav" className="custom-toggler">
@@ -59,16 +57,6 @@ const Header = () => {
             <Nav.Link href="#contato" className="nav-link-custom">
               Contato
             </Nav.Link>
-            <div className="header-image-wrapper">
-              <img
-                src="/logo-rico.png"
-                alt="Rico Informática"
-                className="header-extra-img"
-                onError={(e) => {
-                  e.target.style.display = "none";
-                }}
-              />
-            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
